@@ -60,11 +60,11 @@
 
     <!-- Define Card Locations -->
     <div class="container-fluid">
+
+        <!-- Define Mars News Card -->
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-
-                    <!-- Define Mars News Card -->
                     <div class = "card-body">
                         <h2 class = "card-title text-center">Latest Mars News<hr></h2>
                         <h3 class = "card-title text-center">{{mars_news.title}}<hr></h3>
@@ -72,25 +72,33 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="card">
+        </div>
 
-                    <!-- Define Visualizations Card -->
+        <!-- Define Mars Featured Image Card -->
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class = "card-body">
+                            <h2 class = "card-title text-center">Latest Mars Featured Image<hr></h2>
+                            <div class = "photo-box text-center">
+                                <p><a><img src = {{mars_image}} class = "img-fluid" alt = "Featured Image"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- <div class="col-md-7">
+                <div class="card">
                     <div class = "card-body">
                         <h2 class = "card-title text-center">Visualizations<hr></h2>
-
-                        <!-- Define Content Locations -->
                         <div class = row>
                             <div class = "col-md-6">
-
-                                <!-- Define Temperature Visualization -->
                                 <div class = "photo-box text-center">
                                     <p><a href = "temperature.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Maximum_Temperature_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Maximum Temperature"></a></p>
                                 </div>
                             </div>
                             <div class = "col-md-6">
-
-                                <!-- Define Humidity Visualization -->
                                 <div class = "photo-box text-center">
                                     <p><a href = "humidity.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Humidity_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Humidity"></a></p>
                                 </div>
@@ -98,15 +106,11 @@
                         </div>
                         <div class = row>
                             <div class = "col-md-6">
-
-                                <!-- Define Cloudiness Visualization -->
                                 <div class = "photo-box text-center">
                                     <p><a href = "cloudiness.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Cloudiness_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Cloudiness"></a></p>
                                 </div>
                             </div>
                             <div class = "col-md-6">
-
-                                <!-- Define Wind Visualization -->
                                 <div class = "photo-box text-center">
                                     <p><a href = "wind.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Wind_Speed_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Wind Speed"></a></p>
                                 </div>
@@ -114,8 +118,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> -->
     </div>
 
     <!-- Define Footer -->
