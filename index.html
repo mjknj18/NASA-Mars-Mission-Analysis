@@ -61,16 +61,14 @@
     <!-- Define Card Locations -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-12">
                 <div class="card">
 
-                    <!-- Define Summary Card -->
+                    <!-- Define Mars News Card -->
                     <div class = "card-body">
-                        <h2 class = "card-title text-center">Global City Latitude Analysis Project<hr></h2>
-                        <h3 class = "card-title text-center">Overview<hr></h3>
-                        <p class = "card-text text-center">The purpose of this assignment was to analyze current weather data from over 500 randomly selected global cities. The Numpy, Citipy, and Requests modules in Python were used to generate random latitude and longitude combinations, find the name of the nearest city for each combination, and extract weather data from the Open Weather Map API for each city. Python's Pandas and Matplotlib modules were used to process this data to find certain metrics and generate plots to display meaningful results. This facilitated several observations regarding how maximum temperature, humidity, wind speed, and cloudiness vary based on a city's latitude.</p>
-                        <h3 class = "card-title text-center">Relevant Links<hr></h3>
-                        <p class = "card-text text-center"><a href="https://openweathermap.org/api">Data Source</a></br><a href="https://github.com/mjknj18/Global-Weather-Data-Analysis">Project Repository</a></p>
+                        <h2 class = "card-title text-center">Latest Mars News<hr></h2>
+                        <h3 class = "card-title text-center">{{mars_news.title}}<hr></h3>
+                        <p class = "card-text text-center">{{mars_news.description}}</p>
                     </div>
                 </div>
             </div>
