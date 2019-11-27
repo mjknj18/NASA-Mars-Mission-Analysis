@@ -113,4 +113,4 @@ def scrape():
     scraped_data = {'mars_news': {'title': news_title, 'description': news_text}, 'mars_image': featured_image,
                     'mars_weather': weather_report, 'mars_facts': facts_html}
 
-    print(scraped_data)
+    return scraped_data
