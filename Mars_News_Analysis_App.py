@@ -9,6 +9,9 @@ import pymongo
 app = flask.Flask(__name__, template_folder = 'C:/Users/mjknj/Desktop/UNCC/Homework/Web Scraping/NASA-Mars-Mission-Analysis/')
 app.config["DEBUG"] = True
 
+#Connect to MongoDB Database
+mongo_client = pymongo.MongoClient("mongodb://localhost:27017/")
+
 #Define Path for App Home Screen
 @app.route('/', methods=['GET'])
 
@@ -31,6 +34,11 @@ def home():
 def new_scrape():
     import mars_news_scraping as mns
     scraped_data = mns.scrape()
+
+    mongo_db = mongo_client['mars_db']
+    mongo_col = mongo_db['latest_info']
+
+    mongo_col.insert_one(scraped_data)
 
     return render_template('index.html', **scraped_data)
 
