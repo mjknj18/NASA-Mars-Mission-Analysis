@@ -36,7 +36,7 @@ def new_scrape():
 
     mongo_col.insert_one(scraped_data)
 
-    return render_template('index.html', **scraped_data)
+    return redirect('/')
 
 #Initialize Flask App
 app.run()
