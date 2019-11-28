@@ -1,6 +1,6 @@
 #Import Modules
 import flask
-from flask import request, jsonify, render_template
+from flask import request, jsonify, render_template, redirect, url_for
 import numpy as np
 import pandas as pd
 import pymongo
@@ -36,7 +36,7 @@ def new_scrape():
 
     mongo_col.insert_one(scraped_data)
 
-    return redirect('/')
+    return redirect(url_for('home'))
 
 #Initialize Flask App
 app.run()
