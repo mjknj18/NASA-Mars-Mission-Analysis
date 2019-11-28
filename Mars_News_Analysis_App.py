@@ -12,19 +12,21 @@ app.config["DEBUG"] = True
 @app.route('/', methods=['GET'])
 
 #Define Function for Home Screen Content
-def home():
+def home(scraped_data):
 
     #Launch NASA Mars Mission Analysis Web Page
+    return render_template('index.html', **scraped_data)
+
+#Define Path for Scaping New Data & Updating Web Page
+@app.route('/scrape', methods=['GET'])
+
+#Define Function for Scaping New Data & Updating Web Page
+def new_scrape():
     import mars_news_scraping as mns
     scraped_data = mns.scrape()
 
-    return render_template('index.html', **scraped_data)
+    return scraped_data, render_template('index.html', **scraped_data)
 
-# #Define Path for Precipitation Information Static API
-# @app.route('/api/v1.0/precipitation', methods=['GET'])
-
-# #Define Function for Precipitation Information Static API Content
-# def api_precip():
 
 #     #Extract All Avialable Dates from Measurements Table
 #     date_list = engine.execute('SELECT date FROM Measurement')
