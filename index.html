@@ -24,6 +24,7 @@
 
     /* Define Card Styling */
     .card {margin-top: 10px; margin-bottom: 10px; border: 1px solid black;}
+    .card .table-responsive {padding-left: 535px;}
 
     /* Define Styling for Different Page Sizes */
     @media (min-width: 34em) {.card-columns {-webkit-column-count: 1; -moz-column-count: 1; column-count: 1;}}
@@ -100,6 +101,20 @@
             </div>
         </div>
         
+        <!-- Define Mars Facts Card -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class = "card-body">
+                        <h2 class = "card-title text-center">Latest Mars Facts<hr></h2>
+                        <div class = "table-responsive table-expand text-center">
+                            {{mars_facts|safe}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <!-- <div class="col-md-7">
                 <div class="card">
                     <div class = "card-body">
