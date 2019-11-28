@@ -31,7 +31,7 @@ def new_scrape():
     import mars_news_scraping as mns
     scraped_data = mns.scrape()
 
-    return scraped_data, render_template('index.html', **scraped_data)
+    return render_template('index.html', **scraped_data)
 
 
 #     #Extract All Avialable Dates from Measurements Table

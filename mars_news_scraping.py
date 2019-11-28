@@ -23,8 +23,8 @@ def scrape():
     #Parse HTML Information
     news_soup = bs(news_info, 'html5lib')
 
-    #Pause Code 2 Seconds
-    time.sleep(2)
+    #Pause Code 5 Seconds
+    time.sleep(5)
 
     #Record Title of Latest Mars News Article
     news_title = news_soup.find('div', class_ = "content_title").text
@@ -44,8 +44,8 @@ def scrape():
     #Parse HTML Information
     image_soup = bs(image_info, 'html5lib')
 
-    #Pause Code 2 Seconds
-    time.sleep(2)
+    #Pause Code 5 Seconds
+    time.sleep(5)
 
     #Record URL of JPL Featured Space Image
     featured_image = 'https://www.jpl.nasa.gov' + image_soup.find('a', class_ = 'button fancybox').get('data-fancybox-href')
@@ -62,8 +62,8 @@ def scrape():
     #Parse HTML Information
     weather_soup = bs(weather_info, 'html5lib') 
 
-    #Pause Code 2 Seconds
-    time.sleep(2)
+    #Pause Code 5 Seconds
+    time.sleep(5)
 
     #Extract Latest Weather Report & Image Data from Mars Weather Twitter Site
     weather_report = weather_soup.find('p', class_ = 'TweetTextSize TweetTextSize--normal js-tweet-text tweet-text').text
@@ -87,8 +87,8 @@ def scrape():
     #Parse HTML Information
     facts_soup = bs(facts_info, 'html5lib') 
 
-    #Pause Code 2 Seconds
-    time.sleep(2)
+    #Pause Code 5 Seconds
+    time.sleep(5)
 
     #Extract Data from Mars Planet Profile Table
     facts_table = facts_soup.find('table', class_ = 'tablepress tablepress-id-p-mars')
