@@ -29,6 +29,7 @@ The goal of this project was to develop a webpage to present scraped data from s
 7. Parse the HTML data, and extract the text of the latest Mars weather report.
 8. Auto-load the Mars facts webpage in the browser and scrape the data.
 9. Parse the HTML data, and extract the table of the latest Mars facts.
+10. Compile all of the extracted data into a Python dictionary.
 
 ### Flask App
 
