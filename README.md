@@ -4,10 +4,10 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ## Questions
 
-1. What are the name and summary of the latest NASA Mars news article?
-2. What is the latest NASA Mars featured image?
-3. What is the latest NASA Mars weather report?
-4. What are the latest NASA Mars facts?
+1. What are the name and summary of the latest Mars news article?
+2. What is the latest Mars featured image?
+3. What is the latest Mars weather report?
+4. What are the latest Mars facts?
 
 ## Datasets
 
@@ -20,7 +20,15 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ### Web Scraping
 
-
+1. Create a connection to chrome browser using Splinter.
+2. Auto-load the Mars news article webpage in the browser and scrape the data.
+3. Parse the HTML data, and extract title and summary of latest article.
+4. Auto-load the Mars featured image webpage in the browser and scrape the data.
+5. Parse the HTML data, and extract link of latest Mars featured image.
+6. Auto-load the Mars weather twitter webpage in the browser and scrape the data.
+7. Parse the HTML data, and extract the text of the latest Mars weather report.
+8. Auto-load the Mars facts webpage in the browser and scrape the data.
+9. Parse the HTML data, and extract the table of the latest Mars facts.
 
 ### Flask App
 
