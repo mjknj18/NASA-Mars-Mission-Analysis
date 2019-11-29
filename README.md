@@ -19,3 +19,4 @@
 
 ## Results
 
+1. http://localhost:5000/ (Flask App and MongoDB must be running on local machine to enable full site functionality)
