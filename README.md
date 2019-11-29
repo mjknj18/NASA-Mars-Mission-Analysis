@@ -1,6 +1,6 @@
 # NASA-Mars-Mission-Analysis
 
-The goal of this project was to develop a webpage to present scraped data from several NASA Mars Mission websites. Python with BeautifulSoup and MongoGB were used to scrape and store the required data, and Python with Flask was used to automate that process. HTML with Bootstrap CSS was used to generate and formate the completed webpage presenting the scraped data.
+The goal of this project was to develop a webpage to present scraped data from several NASA Mars Mission websites. MongoDB and Python with Splinter, BeautifulSoup, and Pandas were used to scrape and store the required data, and Python with Flask was used to automate that process. HTML with Bootstrap CSS was used to generate and formate the completed webpage presenting the scraped data.
 
 ## Questions
 
@@ -20,7 +20,7 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ### Web Scraping
 
-1. Create a connection to the Google Chrome browser using Splinter.
+1. Create a connection to the Google Chrome browser.
 2. Auto-load the Mars news article webpage in the browser and scrape the data.
 3. Parse the HTML data, and extract title and summary of latest article.
 4. Auto-load the Mars featured image webpage in the browser and scrape the data.
