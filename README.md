@@ -18,6 +18,16 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ## Tasks
 
+### Web Scraping
+
+
+
+### Flask App
+
+
+
+### HTML Webpage
+
 
 
 ## Results
