@@ -4,7 +4,10 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ## Questions
 
-
+1. What are the name and summary of the latest NASA Mars news article?
+2. What is the latest NASA Mars featured image?
+3. What is the latest NASA Mars weather report?
+4. What are the latest NASA Mars facts?
 
 ## Datasets
 
