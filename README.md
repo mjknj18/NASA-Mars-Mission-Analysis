@@ -1,6 +1,6 @@
 # NASA-Mars-Mission-Analysis
 
-
+The goal of this project was to develop a webpage to present scraped data from several NASA Mars Mission websites. Python with BeautifulSoup was used to scrape the required data, and Python with Flask was used to automate that process. HTML with Bootstrap CSS was used to generate and formate the completed webpage presenting the scraped data.
 
 ## Questions
 
