@@ -20,7 +20,7 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ### Web Scraping
 
-1. Create a connection to chrome browser using Splinter.
+1. Create a connection to the Google Chrome browser using Splinter.
 2. Auto-load the Mars news article webpage in the browser and scrape the data.
 3. Parse the HTML data, and extract title and summary of latest article.
 4. Auto-load the Mars featured image webpage in the browser and scrape the data.
