@@ -7,7 +7,7 @@ import pymongo
 
 #Define Flask App Environment
 app = flask.Flask(__name__, template_folder = 'C:/Users/mjknj/Desktop/UNCC/Homework/Web Scraping/NASA-Mars-Mission-Analysis/')
-app.config["DEBUG"] = True
+app.config["DEBUG"] = False
 
 #Connect to Mongo Database
 mongo_client = pymongo.MongoClient("mongodb://localhost:27017/")
