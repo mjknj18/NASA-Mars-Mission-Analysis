@@ -40,10 +40,10 @@ The goal of this project was to develop a webpage to present scraped data from s
 ### HTML Webpage Development
 
 1. Create a navigation bar with a header and a button that calls the Scrape route from the Flask App.
-2. Create a content card for the name and summary of the latest Mars news article.
-3. Create a content card for the latest Mars featured image.
-4. Create a content card for the latest Mars weather report.
-5. Create a content card for the latest Mars facts.
+2. Create a content card to display the name and summary of the latest Mars news article.
+3. Create a content card to display the latest Mars featured image.
+4. Create a content card to display the latest Mars weather report.
+5. Create a content card to display the latest Mars facts.
 
 ## Results
 
