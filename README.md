@@ -47,4 +47,4 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ## Results
 
-1. http://localhost:5000/ (Flask App and MongoDB must be running on local machine to enable full site functionality)
+1. http://localhost:5000/ (Python Flask App and MongoDB must be running on the local machine to enable full site functionality.)
