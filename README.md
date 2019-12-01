@@ -35,7 +35,7 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 1. Create a connection to the MongoDB engine, and set the path to the appropriate database and collection.
 2. Create a Scrape route that imports and calls the Python scraping code, and stores the outputted Python dictionary in MongoDB.
-3. Create a Home route that loads the currently stored Python dictionary from MongoDB and passes it to the HTML webpage.
+3. Create a Home route that loads the stored Python dictionary from MongoDB and passes it to the HTML webpage.
 
 ### HTML Webpage Development
 
