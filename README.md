@@ -31,13 +31,13 @@ The goal of this project was to develop a webpage to present scraped data from s
 9. Parse the HTML data, and extract the table of the latest Mars facts.
 10. Compile all of the extracted data into a Python dictionary.
 
-### Flask App
+### Flask App Development
 
 1. Create a connection to the MongoDB engine, and set the path to the appropriate database and collection.
 2. Create a Home route that loads the currently stored extracted data from MongoDB and passes it to the HTML webpage.
 3. Create a Scrape route that imports and calls the scraping code, and stores the output dictionary in MongoDB.
 
-### HTML Webpage
+### HTML Webpage Development
 
 1. Create a navigation bar with a header and a button that calls the Scrape route from the Flask App.
 2. Create a content card for the name and summary of the latest Mars news article.
