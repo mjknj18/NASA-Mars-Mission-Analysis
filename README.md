@@ -4,10 +4,10 @@ The goal of this project was to develop a webpage to present scraped data from s
 
 ## Questions
 
-1. Find the name and summary of the latest Mars news article.
-2. Find the latest Mars featured image.
-3. Find the latest Mars weather report.
-4. Find the latest Mars facts.
+1. Find and present the name and summary of the latest Mars news article.
+2. Find and present the latest Mars featured image.
+3. Find and present the latest Mars weather report.
+4. Find and present the latest Mars facts.
 
 ## Datasets
 
