@@ -21,11 +21,11 @@ The goal of this project was to develop a webpage to present scraped data from s
 ### Web Scraping
 
 1. Create a connection to the Google Chrome browser.
-2. Auto-load the Mars news article webpage in the browser and scrape the data.
-3. Parse the HTML data, and extract title and summary of latest article.
-4. Auto-load the Mars featured image webpage in the browser and scrape the data.
-5. Parse the HTML data, and extract link of latest Mars featured image.
-6. Auto-load the Mars weather twitter webpage in the browser and scrape the data.
+2. Auto-load the Mars news webpage in the browser and scrape the data.
+3. Parse the HTML data, and extract the title and summary of the latest article.
+4. Auto-load the Mars images webpage in the browser and scrape the data.
+5. Parse the HTML data, and extract the link of the latest Mars featured image.
+6. Auto-load the Mars weather Twitter webpage in the browser and scrape the data.
 7. Parse the HTML data, and extract the text of the latest Mars weather report.
 8. Auto-load the Mars facts webpage in the browser and scrape the data.
 9. Parse the HTML data, and extract the table of the latest Mars facts.
