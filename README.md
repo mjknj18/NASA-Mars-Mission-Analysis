@@ -34,8 +34,8 @@ The goal of this project was to develop a webpage to present scraped data from s
 ### Flask App Development
 
 1. Create a connection to the MongoDB engine, and set the path to the appropriate database and collection.
-2. Create a Home route that loads the currently stored extracted data from MongoDB and passes it to the HTML webpage.
-3. Create a Scrape route that imports and calls the scraping code, and stores the output dictionary in MongoDB.
+2. Create a Scrape route that imports and calls the Python scraping code, and stores the output Python dictionary in MongoDB.
+3. Create a Home route that loads the currently stored extracted data from MongoDB and passes it to the HTML webpage.
 
 ### HTML Webpage Development
 
