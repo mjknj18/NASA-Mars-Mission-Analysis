@@ -118,11 +118,12 @@
         <div class="col-md-12">
             <div class="card">
                 <div class = "card-body">
-                    <h2 class = "card-title text-center">Visualizations<hr></h2>
+                    <h2 class = "card-title text-center">Latest Mars Hemisphere Images<hr></h2>
                         <div class = row>
                             <div class = "col-md-6">
+                                <h2 class = "card-title text-center">{{mars_hemispheres[0][0]}}<hr></h2>
                                 <div class = "photo-box text-center">
-                                    <p><a href = "temperature.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Maximum_Temperature_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Maximum Temperature"></a></p>
+                                    <p><a><img src = {{mars_hemispheres[0][1]}} class = "img-fluid" alt = {{mars_hemispheres[0][0]}}></a></p>
                                 </div>
                             </div>
                             <div class = "col-md-6">
