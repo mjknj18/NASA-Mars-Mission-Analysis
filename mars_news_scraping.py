@@ -174,4 +174,5 @@ def scrape():
     scraped_data = {'mars_news': {'title': news_title, 'description': news_text}, 'mars_image': featured_image,
                     'mars_weather': weather_report, 'mars_facts': facts_html, 'mars_hemispheres': hemispheres_images}
 
+    #Return Dictionary of Scraped Data
     return scraped_data
