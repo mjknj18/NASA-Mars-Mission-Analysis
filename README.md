@@ -30,7 +30,9 @@ The goal of this project was to develop a webpage to present scraped data from s
 7. Parse the HTML data, and extract the text of the latest Mars weather report.
 8. Auto-load the Mars facts webpage in the browser and scrape the data.
 9. Parse the HTML data, and extract the table of the latest Mars facts.
-10. Compile all of the extracted data into a Python dictionary.
+10. Auto-load the Mars hemispheres webpages in the browser and scrape the data from each page.
+11. Parse the HTML data from each page and extract the latest Mars hemisphere images.
+12. Compile all of the extracted data into a Python dictionary.
 
 ### Flask App Development
 
@@ -45,6 +47,7 @@ The goal of this project was to develop a webpage to present scraped data from s
 3. Create a content card to display the latest Mars featured image.
 4. Create a content card to display the latest Mars weather report.
 5. Create a content card to display the latest Mars facts.
+6. Create a content card to display the latest Mars hemisphere images.
 
 ## Results
 
