@@ -109,8 +109,69 @@ def scrape():
     #Convert Data Frame of Mars Facts to HTML
     facts_html = facts_df.to_html()
 
+    #Define URL for Mars Hemispheres Site
+    hemispheres_url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
+
+    #Open Mars Hemispheres Site in Chrome
+    hemispheres_site = browser.visit(hemispheres_url)
+
+    #Request HTML Information from Mars Hemispheres Site
+    hemispheres_info = browser.html
+  
+    #Parse HTML Information
+    hemispheres_soup = bs(hemispheres_info, 'html5lib')
+
+    #Pause Code 2 Seconds
+    time.sleep(2)
+
+    #Create List for Hemisphere Names & Hemiphere Page Links
+    hemispheres_names = []
+    hemispheres_links = []
+
+    #Loop Through All H3 Tags & Add Hemisphere Names to Appropriate List
+    for name in hemispheres_soup.find_all('h3'):
+        current_name = name.text.replace('Enhanced','')
+
+        hemispheres_names.append(current_name)
+    
+    #Set Counter Variable
+    count_1 = 0
+
+    #Loop Through Attribute Tages & Add Hemisphere Page Links to Appropriate List
+    for data in hemispheres_soup.find_all('a', class_ = 'itemLink product-item'):
+        if count_1 == 0:
+            hemispheres_links.append('https://astrogeology.usgs.gov' + data.get('href'))
+        else:
+            if 'https://astrogeology.usgs.gov' + data.get('href') == hemispheres_links[-1]:
+                pass
+            else:
+                hemispheres_links.append('https://astrogeology.usgs.gov' + data.get('href'))
+            
+        count_1 = count_1 + 1
+
+    #Create Blank List for Hemispheres Data
+    hemispheres_images = []
+
+    #Loop Through Length of Hemisphere Page Link List
+    for count_2 in range(0, len(hemispheres_links)):
+
+        #Open Mars Hemispheres Site in Chrome
+        hemisphere_site = browser.visit(hemispheres_links[count_2])
+
+        #Request HTML Information from Mars Hemispheres Site
+        hemisphere_info = browser.html
+  
+        #Parse HTML Information
+        hemisphere_soup = bs(hemisphere_info, 'html5lib') 
+    
+        #Extract Hemisphere Image Link
+        hemisphere_link = 'https://astrogeology.usgs.gov' + hemisphere_soup.find('img', class_ = 'wide-image').get('src')
+    
+        #Create Python Dictionary of Hemisphere Name & Image Link & Append to Hemisphere Data List
+        hemispheres_images.append({'name': hemispheres_names[count_2], 'link': hemisphere_link})
+
     #Create Dictionary of Scraped Data
     scraped_data = {'mars_news': {'title': news_title, 'description': news_text}, 'mars_image': featured_image,
-                    'mars_weather': weather_report, 'mars_facts': facts_html}
+                    'mars_weather': weather_report, 'mars_facts': facts_html, 'mars_hemispheres': hemispheres_images}
 
     return scraped_data
