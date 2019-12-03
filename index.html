@@ -24,7 +24,7 @@
 
     /* Define Card Styling */
     .card {margin-top: 10px; margin-bottom: 10px; border: 1px solid black;}
-    .card .table-responsive {padding-left: 535px;}
+    /* .card .table-responsive {margin: auto;} */
 
     /* Define Styling for Different Page Sizes */
     @media (min-width: 34em) {.card-columns {-webkit-column-count: 1; -moz-column-count: 1; column-count: 1;}}
@@ -107,7 +107,7 @@
                 <div class="card">
                     <div class = "card-body">
                         <h2 class = "card-title text-center">Latest Mars Facts<hr></h2>
-                        <div class = "table-responsive table-expand text-center">
+                        <div class = "d-flex justify-content-center table-responsive table-expand text-center">
                             {{mars_facts|safe}}
                         </div>
                     </div>
@@ -115,6 +115,7 @@
             </div>
         </div>
 
+        <!-- Define Mars Hemispheres Card -->
         <div class="col-md-12">
             <div class="card">
                 <div class = "card-body">
@@ -127,20 +128,23 @@
                                 </div>
                             </div>
                             <div class = "col-md-6">
+                                <h2 class = "card-title text-center">{{mars_hemispheres[1].name}}<hr></h2>
                                 <div class = "photo-box text-center">
-                                    <p><a href = "humidity.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Humidity_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Humidity"></a></p>
+                                    <p><a><img src = {{mars_hemispheres[1].link}} class = "img-fluid" alt = {{mars_hemispheres[1].name}}></a></p>
                                 </div>
                             </div>
                         </div>
                         <div class = row>
                             <div class = "col-md-6">
+                                <h2 class = "card-title text-center">{{mars_hemispheres[2].name}}<hr></h2>
                                 <div class = "photo-box text-center">
-                                    <p><a href = "cloudiness.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Cloudiness_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Cloudiness"></a></p>
+                                    <p><a><img src = {{mars_hemispheres[2].link}} class = "img-fluid" alt = {{mars_hemispheres[2].name}}></a></p>
                                 </div>
                             </div>
                             <div class = "col-md-6">
+                                <h2 class = "card-title text-center">{{mars_hemispheres[3].name}}<hr></h2>
                                 <div class = "photo-box text-center">
-                                    <p><a href = "wind.html"><img src = "https://github.com/mjknj18/Global-Weather-Data-Analysis/blob/master/Images/Wind_Speed_vs_City_Latitude.png?raw=true" class = "img-fluid" alt = "Wind Speed"></a></p>
+                                    <p><a><img src = {{mars_hemispheres[3].link}} class = "img-fluid" alt = {{mars_hemispheres[3].name}}></a></p>
                                 </div>
                             </div>
                         </div>
