@@ -8,6 +8,7 @@ The goal of this project was to develop a webpage to present scraped data from s
 2. Find and present the latest Mars featured image.
 3. Find and present the latest Mars weather report.
 4. Find and present the latest Mars facts.
+5. Find and present the latest Mars hemisphere images.
 
 ## Datasets
 
